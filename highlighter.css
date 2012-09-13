@@ -1,0 +1,29 @@
+#highlight_a {
+	margin-top: 20px;
+	padding: 5px 30px;
+	border: 1px solid #888;
+	background-color: #111;
+	color: #fff;
+}
+
+#highlight_c {
+	margin-top: 20px;
+	padding: 5px 30px;
+	border: 1px solid #888;
+	background-color: #fff;
+	color: #111;
+}
+
+.highlight_theme_a {
+	background-color: #666666; 
+	font-weight: bold; 
+	text-shadow: none; 
+	color: #FFFFFF;
+}
+
+.highlight_theme_c {
+	background-color: #AAAAAA; 
+	font-weight: bold; 
+	text-shadow: none; 
+	color: #333333;
+}
