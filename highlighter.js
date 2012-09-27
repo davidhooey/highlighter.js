@@ -35,7 +35,7 @@
 					}
 					else if (settings.terms[term].search(/^(.+)$/) != -1) {
 						if (RegExp("(" + cjk_range1 + ")|(" + cjk_range2 + ")").test(settings.terms[term])) {
-							data = data.replace(terms[term], "<span class='" + settings.class + "'>" + settings.terms[term] + "</span>", 'gi');
+							data = data.replace(settings.terms[term], "<span class='" + settings.class + "'>" + settings.terms[term] + "</span>", 'gi');
 						}
 						else {
 							data = data.replace(RegExp("(^\|[" + boundary_chars + "]+)(" + settings.terms[term] + ")([" + boundary_chars + "]+\|$)",'gi'), "$1<span class='" + settings.class + "'>$2</span>$3", 'gi');

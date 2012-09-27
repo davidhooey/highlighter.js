@@ -313,9 +313,9 @@
 			
 			// Test is not working. Eventually will want to figure out CJK tests.
 			test("highlight simplified chinese", function() {
-				$('#highlight_a').html(" 述 说 天 使 怎 样 合 唱");
-				$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['>天']});
-		        equal($('#highlight_a').html(), " 述 说 <span class=\"highlight_theme_a\"> 天</span> 使 怎 样 合 唱");
+				$('#highlight_a').html("述说天使怎样合唱");
+				$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':["天"]});
+		        equal($('#highlight_a').html(), "述说<span class=\"highlight_theme_a\">天</span>使怎样合唱");
 		    });
 
 		});
@@ -324,11 +324,11 @@
 <body>
     <div id="qunit"></div>
 		
-	<div id="highlight_a">
+	<div id="highlight_a" hidden="">
 		Some of the words in here should be highlighted if all things work properly.
 	</div>
 		
-	<div id="highlight_c">
+	<div id="highlight_c" hidden="">
 		Some of the words in here should be highlighted if all things work properly.
 	</div>
 </body>
