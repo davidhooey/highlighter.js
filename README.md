@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/davidhooey/highligher.js.png)](https://travis-ci.org/davidhooey/highligher.js)
+[![Build Status](https://travis-ci.org/davidhooey/highlighter.js.png?branch=master)](https://travis-ci.org/davidhooey/highlighter.js)
 
 # Highlighter.js
 
