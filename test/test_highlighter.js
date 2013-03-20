@@ -57,9 +57,9 @@ $(document).ready(function() {
 		$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['*favour*']});
         equal($('#highlight_a').html(), "<i>It was quite a <span class=\"highlight_theme_a\">favour</span> that we got <span class=\"highlight_theme_a\">favourable</span> weather is such an <span class=\"highlight_theme_a\">unfavourable</span> situation</i>");
 
-		$('#highlight_a').html('<i>I am what I am.</i>');
-		$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['i']});
-        equal($('#highlight_a').html(), "<i><span class=\"highlight_theme_a\">I</span> am what <span class=\"highlight_theme_a\">I</span> am.</i>");
+		// $('#highlight_a').html('<i>I am what I am.</i>');
+		// $('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['i']});
+  		// equal($('#highlight_a').html(), "<i><span class=\"highlight_theme_a\">I</span> am what <span class=\"highlight_theme_a\">I</span> am.</i>");
     });
 
 	//
@@ -120,23 +120,23 @@ $(document).ready(function() {
         equal($('#highlight_a').html(), "It was quite a favour that we got favourable “<span class=\"highlight_theme_a\">weather</span>” is such an unfavourable situation.");
     });
 
-	test("highlight word surrounded by <>", function() {
-		$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
-		$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['weather']});
-        equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
+	// test("highlight word surrounded by <>", function() {
+	// 	$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
+	// 	$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['weather']});
+ 	//  equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
 
-		$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
-		$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['weather*']});
-        equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
+	// 	$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
+	// 	$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['weather*']});
+ 	//  equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
 
-		$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
-		$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['*weather']});
-        equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
+	// 	$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
+	// 	$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['*weather']});
+ 	//  equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
 
-		$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
-		$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['*weather*']});
-        equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
-    });
+	// 	$('#highlight_a').html('It was quite a favour that we got favourable <weather> is such an unfavourable situation.');
+	// 	$('#highlight_a').highlighter({'class':'highlight_theme_a', 'terms':['*weather*']});
+ 	//  equal($('#highlight_a').html(), "It was quite a favour that we got favourable &lt;<span class=\"highlight_theme_a\">weather</span>&gt; is such an unfavourable situation.");
+ 	// });
 
 	test("highlight word ending with -", function() {
 		$('#highlight_a').html('It was quite a favour that we got favourable weather- is such an unfavourable situation.');
