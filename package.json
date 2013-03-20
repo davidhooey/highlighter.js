@@ -1,0 +1,16 @@
+{
+  "name"          : "highlighter.js",
+  "description"   : "Highlight text by surrounding the text with a span tag and assigning a class.",
+  "author"        : "David Hooey <davidhooey@gmail.com>",
+  "dependencies"  : {
+    "jquery"      : ">=1.7.1"
+  },
+  "devDependencies": {
+    "phantomjs": "1.8.1-3"
+  },
+  "scripts": {
+    "test": "phantomjs test/vendor/runner.js test/index.html"
+  },
+  "main"          : "highligher.js",
+  "version"       : "1.0.0"
+}
